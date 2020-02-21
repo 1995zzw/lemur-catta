@@ -1,4 +1,4 @@
-package com.redisoper;
+package com.zzw.studyredisautoconfig;
 
 import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;

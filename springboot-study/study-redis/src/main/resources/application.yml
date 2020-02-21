@@ -1,0 +1,9 @@
+spring:
+  redis:
+    host: zzw.study
+    port: 6379
+    jedis:
+      pool:
+        max-active: 20
+        max-idle: 10
+        min-idle: 5

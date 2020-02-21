@@ -1,9 +1,5 @@
-package com.tuling.entity;
+package com.zzw.studyredis.entity;
 
-
-/**
- * Created by smlz on 2019/3/24.
- */
 public class User {
 
     public User(Integer userId, String userName, String password, String email, String birthDate) {

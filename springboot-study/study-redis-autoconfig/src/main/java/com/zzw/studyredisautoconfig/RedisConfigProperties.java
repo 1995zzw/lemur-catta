@@ -1,4 +1,4 @@
-package com.redisoper;
+package com.zzw.studyredisautoconfig;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;

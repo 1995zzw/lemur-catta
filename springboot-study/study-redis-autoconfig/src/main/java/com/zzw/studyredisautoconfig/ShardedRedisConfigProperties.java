@@ -1,4 +1,4 @@
-package com.redisoper;
+package com.zzw.studyredisautoconfig;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

@@ -1,4 +1,4 @@
-package com.redisoper;
+package com.zzw.studyredisautoconfig;
 
 import lombok.extern.slf4j.Slf4j;
 import redis.clients.jedis.ShardedJedis;

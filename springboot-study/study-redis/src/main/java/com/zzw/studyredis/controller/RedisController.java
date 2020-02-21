@@ -1,4 +1,4 @@
-package com.tuling.controller;
+package com.zzw.studyredis.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * Created by smlz on 2019/3/22.
- */
 @RestController
 @RequestMapping("/redis")
 public class RedisController {
