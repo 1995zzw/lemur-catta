@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: zzw.study:8848
+  application:
+    name: demo1
