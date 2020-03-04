@@ -1,0 +1,32 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: order-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://zzw.study:3306/ss-order
+    username: root
+    password: root123456
+eureka:
+  client:
+    register-with-eureka: true
+    enabled: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:eureka@localhost:8000/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+    instanceId: order
+    leaseRenewalIntervalInSeconds: 30 # 服务续约间隔时间。默认每隔30秒，客户端会向服务端发送心跳。见DiscoveryClient.initScheduledTasks
+    leaseExpirationDurationInSeconds: 90 # 服务失效时间。缺省为90秒服务端接收不到客户端的心跳，则剔除该客户端服务实例。
+    # 端点配置。若配置了context-path，actuator的监控端点会增加前缀，此时eureka也需要相应增加
+#    status-page-url-path: ${server.context-path}/info
+#    health-check-url-path: ${server.context-path}/health
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:/mapper/*.xml
