@@ -3,5 +3,10 @@ spring:
     nacos:
       discovery:
         server-addr: zzw.study:8848
+        namespace: 123
+        group: dev
+        cluster-name: SH
+        metadata:
+          version: v1
   application:
     name: demo1
