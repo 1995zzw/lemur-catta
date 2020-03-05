@@ -1,0 +1,25 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: server-product
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://zzw.study:3306/ss-product
+    username: root
+    password: root123456
+
+eureka:
+  client:
+    register-with-eureka: true
+    enabled: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka:eureka@localhost:8000/eureka
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true
+    instanceId: product
+    leaseRenewalIntervalInSeconds: 30
+    leaseExpirationDurationInSeconds: 90
