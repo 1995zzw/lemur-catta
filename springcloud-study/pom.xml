@@ -9,6 +9,7 @@
         <module>server-order</module>
         <module>server-product-8002</module>
         <module>center-service</module>
+        <module>study-api</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
